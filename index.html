@@ -6,46 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/cb9b186a3d.js" crossorigin="anonymous"></script>
     <title>Martin Mares</title>
 </head>
 <body>
     <header>
         <nav >
-            <div class="hamburguer">
+            <div onclick="menui();" class="hamburguer" id="hamburguer">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Home</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#description">About</a></li>
+                <li onmouseover="hoverover1();" onmouseout="hoverout1();"><a id="e1" href="#projects">Projects</a></li>
+                <li onmouseover="hoverover2();" onmouseout="hoverout2();"><a id="e2" href="#contact">Contact</a></li>
+                <li onmouseover="hoverover3();" onmouseout="hoverout3();"><a id="e3" href="#description">Home</a></li>
+                
             </ul>
         </nav>
     </header>
     <main>
-
-        <section class="about" id="about">
-            <h1  class="welcomeText">WELCOME</h1>
+        <section class="description" id="description">    
             
-            <div class="description">
-                <h2>I'M MARTIN M.</h2>
-                <P>I am a software development student</P>
-                <P>I am focused on front-end wed design</P>
-            </div>
+                <h1>I'M MARTIN M.</h1>
+                <P>I am a software development student.</P>
+                <P>I know about software engineering, web desing and optimization, programming languajes like Java and Javascript.</P>
+                <p>I am passionate about creating and sharing ideas. I can speak three languages fluently; Spanish, English and French.</p>
+                <p class="resume">Download my <a class="resume-link" href="">Resume</a></p>
+
+                <div class="iconos" id="iconos">
+                    <i onclick="Href0();" class="fab fa-whatsapp-square"></i>
+                    <i onclick="Href1();" class="fab fa-linkedin"></i>
+                    <i onclick="Href2();" class="fab fa-github-square"></i>
+                </div>
         </section>
 
         <section class="projects" id="projects">
             
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
 
         </section>
     </main>
