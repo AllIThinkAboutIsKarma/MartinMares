@@ -13,9 +13,19 @@ function inicio() {
 
 inicio();
 
+var x = 0;
+
 function menui() {
+    
+    if(x==0){
     menuToogle.classList.remove("menuInvisible");
     menuToogle.classList.add("menuVisible");
+    x=1
+    } else {
+    menuToogle.classList.remove("menuVisible");
+    menuToogle.classList.add("menuInvisible");
+    x=0;
+    }
 };
 
 function hoverover1() {
@@ -55,7 +65,7 @@ function hoverout3() {
 };
 
 function Href0(){
-    window.open('https://wa.me/4495407591','_blank');
+    window.open('https://wa.me/524495407591','_blank');
 }
 
 function Href1(){
