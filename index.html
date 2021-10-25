@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=".css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
             <ul class="nav-links" id="nav-links">
                 <li><a href="#description">About</a></li>
                 <li onmouseover="hoverover1();" onmouseout="hoverout1();"><a id="e1" href="#projects">Projects</a></li>
-                <li onmouseover="hoverover2();" onmouseout="hoverout2();"><a id="e2" href="#contact">Contact</a></li>
+                <li onmouseover="hoverover2();" onmouseout="hoverout2();"><a id="e2" href="#footer">Contact</a></li>
                 <li onmouseover="hoverover3();" onmouseout="hoverout3();"><a id="e3" href="#description">Home</a></li>
                 
             </ul>
@@ -49,10 +50,25 @@
         </section>
 
         <section class="contact" id="contact">
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14809.226569344766!2d-102.30272212018386!3d21.88426461865829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee64ed47e5f9%3A0x2ee42d9f287712fb!2sZona%20Centro%2C%2020000%20Aguascalientes!5e0!3m2!1sen!2smx!4v1635136816664!5m2!1sen!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="formulario" id="formulario">
+                <form action="">
+                    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Enter Your Name">
+                    <input class="controls" type="email" name="correo" id="correo" placeholder="Enter Your Email">
+                    </select>
+                    <textarea class="controls" name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Type your message here..."></textarea>
+                    <input id="botons" class="botons" type="submit" value="Send">
+                </form>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer" id="footer">
+        <p>Email: martinmarescr@gmail.com</p>
+        <p>Cellphone number: +52 4495407591</p>
+        <p>Address: Aguascalientes, México</p>
+    </footer>
     <script src="/script.js"></script>
+    <script src="/projects.js"></script>
 </body>
 </html>
