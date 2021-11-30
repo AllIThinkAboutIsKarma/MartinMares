@@ -44,9 +44,9 @@ focusedName.addEventListener('input', function(e){
 focusedName = document.getElementById("nombres");
 focusedCorreo = document.getElementById("correo");
 btnEnviar = document.getElementById("botons");
-focusedName.addEventListener('click', function(e){
-    if(focusedName.value !== '' && focusedCorreo.value !== ''{
-        alert("Hola");
+btnEnviar.addEventListener('click', function(e){
+    if(focusedName.value === '' && focusedCorreo.value === ''){
+        alert("Hay campos obligatorios");
     }
     });
 
