@@ -28,6 +28,33 @@ function menui() {
     }
 };
 
+/*
+Contact Javascript Form
+*/
+
+/*var focusedName = document.getElementById("nombres");
+focusedName.addEventListener('input', function(e){
+    document.getElementById("mensaje").innerHTML="Hola";
+    focusedName.classList.add("green");
+    focusedName.addEventListener('blur', function(e){
+        document.getElementById("mensaje").innerHTML="Bienvenido";
+    })
+});*/
+
+focusedName = document.getElementById("nombres");
+focusedCorreo = document.getElementById("correo");
+btnEnviar = document.getElementById("botons");
+focusedName.addEventListener('click', function(e){
+    if(focusedName.value !== '' && focusedCorreo.value !== ''{
+        alert("Hola");
+    }
+    });
+
+/*
+Form javascript finishes 
+ * 
+*/
+
 function hoverover1() {
     
     uno.classList.remove("Cblack");
