@@ -45,7 +45,15 @@ focusedName = document.getElementById("nombres");
 focusedCorreo = document.getElementById("correo");
 btnEnviar = document.getElementById("botons");
 btnEnviar.addEventListener('click', function(e){
-    if(focusedName.value === '' && focusedCorreo.value === ''){
+    if(focusedName.value === ''){
+        alert("Hay campos obligatorios");
+    } else if (focusedName.value !== '') {
+        focusedName.addEventListener('blur', function(e){
+            focusedName.classList.add("green");
+        }
+        
+    }
+    if(focusedCorreo.value === ''){
         alert("Hay campos obligatorios");
     }
     });
