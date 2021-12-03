@@ -151,8 +151,12 @@ footer p {
     padding: 15px;
 }
 
+.red {
+    border-bottom: 2px solid red;
+}
+
 .green {
-    border-bottom: 1px solid green;
+    border-bottom: 2px solid green;
 }
 
 @media (max-width: 700px) {
