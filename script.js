@@ -17,6 +17,7 @@ focusedName = document.getElementById("nombres");
 focusedCorreo = document.getElementById("correo");
 btnEnviar = document.getElementById("botons");
 forma = document.getElementById("form");
+texto = document.getElementById("mensaje");
 
 btnEnviar.addEventListener('click', function(e){
     if(focusedName.value === ''){
