@@ -6,25 +6,60 @@ var imagen = document.getElementById("projects");
 imagen.innerHTML = '<img src="/assets/img/ProyectoJaponViews.png">';*/
 
 
-window.onload = function{
+window.onload = function(){
+   
     var carrusel = [
         '/assets/img/ProyectoJaponViews.png',
         '/assets/img/l.png',
-        '/assets/img/m.png' 
+        '/assets/img/m.png'
      ];
      
      let posicionInicial = 0;
      let $proyectos = document.querySelector('#projects');
+     $proyectos.style.backgroundImage = `url(${carrusel[posicionInicial]})`;
+     /*var flechaDerecha = document.getElementById("fder");*/
 
+
+     /*flechaDerecha.addEventListener('click', function () {*/
      
-        $proyectos.style.backgroundImage = `url(${carrusel[posicionInicial]})`;
-
-         if (posicionInicial < 2){
+      
+         /*if (posicionInicial < 2){
             posicionInicial++;
          } else {
             posicionInicial = 0;
-         }
-         
+         }*/
+      
+     /*});*/
+
+     var fIzquierda = document.getElementById("fder");
+     fIzquierda.addEventListener('click', function () {
+       
+      if (posicionInicial < 2){
+          posicionInicial++;
+          $proyectos.style.backgroundImage = `url(${carrusel[posicionInicial]})`;
+       } else {
+          posicionInicial = 0;
+          $proyectos.style.backgroundImage = `url(${carrusel[posicionInicial]})`;
+       }
+       
+     });
+
+     var fDerecha = document.getElementById("fizq");
+     fDerecha.addEventListener('click', function () {
+       
+      if (posicionInicial > 0){
+          posicionInicial--;
+          $proyectos.style.backgroundImage = `url(${carrusel[posicionInicial]})`;
+       } else {
+          posicionInicial = 2;
+          $proyectos.style.backgroundImage = `url(${carrusel[posicionInicial]})`;
+       }
+       
+     });
+     
+
     }
+
+   
     
     

@@ -6,7 +6,24 @@
     scroll-behavior: smooth;
 }
 
+.fas {
+    position: absolute;
+    font-size: 300px;
+    color: grey;
+}
 
+.fas:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.fa-angle-left {
+    left: 10px;
+}
+
+.fa-angle-right {
+    right: 10px;
+}
 
 .nav-links {
     display: flex;
