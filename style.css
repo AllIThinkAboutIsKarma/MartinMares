@@ -263,4 +263,13 @@ footer p {
             justify-content: center;
         }
 
+        footer {
+            flex-direction: column;
+            height:150px;
+        }
+
+        footer p{
+        padding: 8px;
+        }
+
 }
