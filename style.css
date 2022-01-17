@@ -240,4 +240,7 @@ footer p {
         font-size: 20px;
         color: grey;
     }
+    .projects {
+        background-size: 300px;
+    }
 }
