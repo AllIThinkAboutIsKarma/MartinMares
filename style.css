@@ -240,7 +240,27 @@ footer p {
         font-size: 20px;
         color: grey;
     }
+    
     .projects {
         background-size: 300px;
     }
+
+    .fas {
+        font-size: 70px;
+        }
+
+        .fa-angle-left {
+            left: 5px;
+        }
+        
+        .fa-angle-right {
+            right: 5px;
+        }
+
+        .contact {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
 }
