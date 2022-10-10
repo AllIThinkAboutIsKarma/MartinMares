@@ -9,9 +9,9 @@ imagen.innerHTML = '<img src="/MartinMares/assets/img/ProyectoJaponViews.png">';
 window.onload = function(){
    
     var carrusel = [
-        '/MartinMares/assets/img/ProyectoJaponViews.png',
-        '/MartinMares/assets/img/l.png',
-        '/MartinMares/assets/img/m.png'
+       {url: '/MartinMares/assets/img/ProyectoJaponViews.png'},
+       {url: '/MartinMares/assets/img/l.png'},
+       {url: '/MartinMares/assets/img/m.png'}
      ];
      
      let posicionInicial = 0;
