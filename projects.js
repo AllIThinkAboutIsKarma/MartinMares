@@ -3,13 +3,13 @@
 }];
 
 var imagen = document.getElementById("projects"); 
-imagen.innerHTML = '<img src="/MartinMares/assets/img/ProyectoJaponViews.png">';*/
+imagen.innerHTML = '<img src="/assets/img/ProyectoJaponViews.png">';*/
 
 
 window.onload = function(){
    
     var carrusel = [
-       {url: '/MartinMares/assets/img/ProyectoJaponViews.png'},
+       {url: '/assets/img/ProyectoJaponViews.png'},
        {url: '/MartinMares/assets/img/l.png'},
        {url: '/MartinMares/assets/img/m.png'}
      ];
