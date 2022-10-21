@@ -1,5 +1,5 @@
 /*var carrusel = [{
-   img1 :'/MartinMares/assets/img/ProyectoJaponViews.png', 
+   img1 :'assets/img/ProyectoJaponViews.png', 
 }];
 
 var imagen = document.getElementById("projects"); 
