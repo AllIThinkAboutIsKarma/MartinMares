@@ -1,17 +1,17 @@
 /*var carrusel = [{
-   img1 :'assets/img/ProyectoJaponViews.png', 
+   img1 :'/MartinMares/assets/img/ProyectoJaponViews.png', 
 }];
 
 var imagen = document.getElementById("projects"); 
-imagen.innerHTML = '<img src="/assets/img/ProyectoJaponViews.png">';*/
+imagen.innerHTML = '<img src="/MartinMares/assets/img/ProyectoJaponViews.png">';*/
 
 
 window.onload = function(){
    
     var carrusel = [
-       {url: '/assets/img/ProyectoJaponViews.png'},
-       {url: '/MartinMares/assets/img/l.png'},
-       {url: '/MartinMares/assets/img/m.png'}
+       '/MartinMares/assets/img/ProyectoJaponViews.png',
+       '/MartinMares/assets/img/l.png',
+       '/MartinMares/assets/img/m.png'
      ];
      
      let posicionInicial = 0;
